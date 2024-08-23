@@ -8,29 +8,41 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_hey",
-						"type": "string"
-					},
-					{
 						"internalType": "uint256",
-						"name": "_no",
+						"name": "_ticketPrice",
 						"type": "uint256"
 					}
 				],
-				"name": "addInfo",
-				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "buyTicket",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "ticketId",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "hey",
+				"name": "getAmount",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -38,12 +50,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "no",
+				"name": "message",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -63,7 +75,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lesson_1.sol": "MyFirstContract"
+			"lesson_3.sol": "EventTicket"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -77,12 +89,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"lesson_1.sol": {
-			"keccak256": "0xc0964a21dd1e944078331022b2702442d0e6e84e8949b27ea85ed9ebf30d4774",
+		"lesson_3.sol": {
+			"keccak256": "0x32812f2fc551c8e4271f42253a8fb594e8b053154769a0e98a7aae291782709b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4f02d3f7a129c3cc077cdccf70dcb879179f198a6a305bcf4f49e7597095b5a4",
-				"dweb:/ipfs/Qmd5FTUDqT1FdYamv68KC8ANw3vufYNbm13goPtybzJw5M"
+				"bzz-raw://616f02e56c7bbfb52d1d9db5c595ca8340efaed40eee6815d161dd2d8aff78ff",
+				"dweb:/ipfs/QmeW2dibpc3MmPnsahn7a1gvDF8K78QhbcFXEnHM5ie5Zc"
 			]
 		}
 	},

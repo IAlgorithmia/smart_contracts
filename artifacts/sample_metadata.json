@@ -6,31 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_hey",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_no",
-						"type": "uint256"
-					}
-				],
-				"name": "addInfo",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "hey",
+				"name": "currentNFTs",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -38,7 +20,21 @@
 			},
 			{
 				"inputs": [],
-				"name": "no",
+				"name": "decrementNFT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "incrementNFT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewNFTs",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -63,7 +59,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lesson_1.sol": "MyFirstContract"
+			"lesson_2.sol": "sample"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -77,12 +73,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"lesson_1.sol": {
-			"keccak256": "0xc0964a21dd1e944078331022b2702442d0e6e84e8949b27ea85ed9ebf30d4774",
+		"lesson_2.sol": {
+			"keccak256": "0x6c82d9b04f4ac6de97a361d189b1f7eb9f3a430d91e85982b5c390d38c75e3bb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4f02d3f7a129c3cc077cdccf70dcb879179f198a6a305bcf4f49e7597095b5a4",
-				"dweb:/ipfs/Qmd5FTUDqT1FdYamv68KC8ANw3vufYNbm13goPtybzJw5M"
+				"bzz-raw://5bea3e64b15782773cbe2c6825c88cadaf08fd23516abc6601324f0486da3bad",
+				"dweb:/ipfs/QmRVKF6jUkzFKcKf5NF3CjmJ2KFLYoNcZ8hDp8f2LHAkxc"
 			]
 		}
 	},
