@@ -29,5 +29,7 @@ contract EventTicket{
 
     function getAmount() public view returns (uint){
         return totalAmount;
+        //since ive only written the type of variable that Im going to pass Ill need to 
+        //return the variable itself
     }
 }

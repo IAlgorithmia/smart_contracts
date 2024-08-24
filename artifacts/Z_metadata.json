@@ -8,41 +8,27 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_ticketPrice",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
 					}
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "buyTicket",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "ticketId",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "getAmount",
+				"name": "name",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -50,7 +36,33 @@
 			},
 			{
 				"inputs": [],
-				"name": "message",
+				"name": "textX",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "textY",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "textZ",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -75,7 +87,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lesson_3.sol": "EventTicket"
+			"lesson_5.sol": "Z"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -89,12 +101,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"lesson_3.sol": {
-			"keccak256": "0xf6b2a969d19b4611a3f9f12499e8a28a89d6748e67b967e56506cdf0961b3d30",
+		"lesson_5.sol": {
+			"keccak256": "0x8b68df40d32d80d5aca5dd052dee71a703504a47bd7af6a7a9192d4b825c79cf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://895d3f8108a181694addef037f1a25f02d324f6b1386d04111c143c515493545",
-				"dweb:/ipfs/Qmdja3FUczBCRUE5LWKBE1WEswS6LcZF5HzFauu3GjeUn2"
+				"bzz-raw://bccdd4bc0a131f1a71209330da3de8c2166466c5a48db6369fe20f5b68131368",
+				"dweb:/ipfs/Qmeo4ASMzJ8xhWWWHAJsKKG2JCjUbbiiKE65qeWatpHKcm"
 			]
 		}
 	},
