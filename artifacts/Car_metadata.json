@@ -8,41 +8,27 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_ticketPrice",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_model",
+						"type": "string"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "buyTicket",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "ticketId",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "getAmount",
+				"name": "carAddr",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -50,12 +36,25 @@
 			},
 			{
 				"inputs": [],
-				"name": "message",
+				"name": "model",
 				"outputs": [
 					{
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -75,7 +74,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lesson_3.sol": "EventTicket"
+			"lesson_10.sol": "Car"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -89,12 +88,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"lesson_3.sol": {
-			"keccak256": "0xf6b2a969d19b4611a3f9f12499e8a28a89d6748e67b967e56506cdf0961b3d30",
+		"lesson_10.sol": {
+			"keccak256": "0x81ffe86f18bbcc479a13c2863b1cd3ef4a21cf9a19dca09eedd294d67b198e02",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://895d3f8108a181694addef037f1a25f02d324f6b1386d04111c143c515493545",
-				"dweb:/ipfs/Qmdja3FUczBCRUE5LWKBE1WEswS6LcZF5HzFauu3GjeUn2"
+				"bzz-raw://ac1107c0cc46742d54c357ab635b38c936e2c9346055bc1b4272714e3584502b",
+				"dweb:/ipfs/Qmaf1ucgbMqzXfhHaN7A56t97GL736AH7NDKMJjugLtjGe"
 			]
 		}
 	},

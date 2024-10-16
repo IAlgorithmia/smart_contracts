@@ -9,26 +9,15 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_ticketPrice",
+						"name": "_x",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "buyTicket",
+				"name": "setX",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "ticketId",
+						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -36,8 +25,32 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "setXandSendEther",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "getAmount",
+				"name": "value",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -50,12 +63,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "message",
+				"name": "x",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -75,7 +88,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lesson_3.sol": "EventTicket"
+			"lesson_9.sol": "Callee"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -89,12 +102,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"lesson_3.sol": {
-			"keccak256": "0xf6b2a969d19b4611a3f9f12499e8a28a89d6748e67b967e56506cdf0961b3d30",
+		"lesson_9.sol": {
+			"keccak256": "0x47d1b9c7b50c7a0fb2b13f1a9c8872c63e896dc633776c704c3964f2eb5f8fb0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://895d3f8108a181694addef037f1a25f02d324f6b1386d04111c143c515493545",
-				"dweb:/ipfs/Qmdja3FUczBCRUE5LWKBE1WEswS6LcZF5HzFauu3GjeUn2"
+				"bzz-raw://ad43fd9dbe6eac776bb64dcf4f7de1701acc4ccdf03d120760db08800b30b8e3",
+				"dweb:/ipfs/QmYQJRQbanJT62GrxkHxcX2xAsnDQcMqarVXHBtPEyeCMV"
 			]
 		}
 	},

@@ -8,25 +8,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
+						"internalType": "contract Callee",
+						"name": "_callee",
 						"type": "address"
-					}
-				],
-				"name": "deleteRollNo",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+					},
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
 					}
 				],
-				"name": "getRollNo",
+				"name": "setX",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -34,7 +26,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -46,13 +38,42 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "_roll",
+						"name": "_x",
 						"type": "uint256"
 					}
 				],
-				"name": "setRollNo",
+				"name": "setXFromAddress",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Callee",
+						"name": "_callee",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "setXandSendEther",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -69,7 +90,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lesson_6.sol": "Mapping"
+			"lesson_9.sol": "Caller"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -83,12 +104,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"lesson_6.sol": {
-			"keccak256": "0x4b921eba4373aa363c4b4c413730967787b5e23630743cc2f7cf37e4c9a63055",
+		"lesson_9.sol": {
+			"keccak256": "0x47d1b9c7b50c7a0fb2b13f1a9c8872c63e896dc633776c704c3964f2eb5f8fb0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4106fe3392a1d5ffddadb549e60db2113d7143f2b341281c7b1bfa40c6a863fb",
-				"dweb:/ipfs/QmaykP8X4sZsYoaZVZfg6AFMCSEhwH3x5HgPzeGLbnFb82"
+				"bzz-raw://ad43fd9dbe6eac776bb64dcf4f7de1701acc4ccdf03d120760db08800b30b8e3",
+				"dweb:/ipfs/QmYQJRQbanJT62GrxkHxcX2xAsnDQcMqarVXHBtPEyeCMV"
 			]
 		}
 	},
